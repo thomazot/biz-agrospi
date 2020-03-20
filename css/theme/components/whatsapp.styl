@@ -1,0 +1,34 @@
+.whatsapp
+    &__header
+        a
+            display: flex
+            align-items: center
+            color: var(--secundary-hover)
+            font-weight: bold
+            font-size: 14px
+
+            .ico
+                width: 24px
+                height: 24px
+                color: var(--whatsapp)
+
+    @media (max-width: 992px)
+        .header &
+            position: fixed
+            right: 20px
+            bottom: 20px
+            padding: 15px
+
+        &__header
+            a
+                span
+                    display: none
+
+    @media (min-width: 993px)
+        .header &
+            margin-left: 35px
+
+        &__header
+            a
+                .ico
+                    margin-right: 10px

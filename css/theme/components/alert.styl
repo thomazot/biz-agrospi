@@ -1,0 +1,33 @@
+.alert
+    margin-bottom: 0 !important
+    background: var(--c-alert)
+    color: var(--white)
+    text-align: center
+    text-transform: uppercase
+    font-weight: regular
+    font-size: 12px
+    line-height: 1
+
+    .ico
+        flex: 0 0 21px
+        width: 21px
+        height: 19px
+
+    &__container
+        container()
+
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 40px
+
+    @media (min-width: 993px)
+        .ico
+            margin-right: 50px
+
+    @media (max-width: 992px)
+        .ico
+            margin-right: 10px
+
+    @media (max-width: 500px)
+        font-size: 11px

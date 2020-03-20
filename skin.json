@@ -1,6 +1,6 @@
 {
     "protocol": "http",
-    "host": "ohvely.loja.biz",
+    "host": "agrospi.dev.bizcommerce.com.br",
     "browsers": [">1%"],
     "pxtorem": {
         "rootValue": 16,

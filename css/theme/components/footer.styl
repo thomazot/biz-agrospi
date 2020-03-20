@@ -1,0 +1,100 @@
+.footer
+    .socials__svg
+        height: 50px
+
+    &__title
+        padding-bottom: 15px
+        color: var(--secundary-hover)
+        text-transform: uppercase
+        font-weight: regular
+        font-size: 16px
+
+    &__container
+        margin: -10px
+
+    &__box
+        padding: 10px
+
+        &--socials-page
+            iframe
+                margin-bottom: -41px
+                height: 182px
+
+    &__timer, &__location
+        text-transform: uppercase
+        font-weight: regular
+        font-size: 12px
+
+    &__timer
+        padding: 10px 0
+
+    &__tel
+        font-weight: regular
+        font-size: 12px
+
+        .number
+            padding-left: 4px
+            font-weight: bold
+            font-size: 17px
+
+    &__copyright
+        color: var(--secundary-hover)
+        text-transform: uppercase
+        font-weight: reuglar
+        font-size: 11px
+        line-height: 1.2
+
+        .footer__container
+            padding: 10px
+
+    &__row
+        &--payments
+            padding: 40px 0
+
+        &--nav
+            padding: 30px 0
+            background: var(--secundary)
+            color: var(--secundary-contrast)
+
+            .footer__title
+                color: var(--secundary-contrast)
+
+            .mymenu
+                .li--0
+                    margin-bottom: 0
+                    line-height: 1.3
+
+                .a--0
+                    color: var(--secundary-contrast)
+                    text-transform: uppercase
+                    font-weight: regular
+                    font-size: 12px
+
+            @media (min-width: 993px)
+                box-shadow: 800px 0 0 var(--secundary), -800px 0 0 var(--secundary)
+
+            @media (max-width: 992px)
+                box-shadow: 300px 0 0 var(--secundary), -300px 0 0 var(--secundary)
+
+    @media (max-width: 992px)
+        text-align: center
+
+        .flex--a-center
+            justify-content: center
+
+    @media (min-width: 993px)
+        &__box
+            flex: 0 0 auto
+            min-width: 0
+
+            &--socials-page
+                align-self: flex-end
+
+                iframe
+                    height: 212px
+                    background: #fff
+
+        &__container
+            display: flex
+            justify-content: space-between
+            align-items: flex-start

@@ -1,0 +1,35 @@
+.warnings
+    --bg: #e49710
+    --bd: #d78e11
+    --contrast: #fff
+
+    &
+        position: relative
+        margin-top: -16px
+        padding: 40px 0
+        background: linear-gradient(to bottom right, var(--bg) 0, var(--bg) 55%, var(--bd) 50%, var(--bd) 100%)
+        color: var(--contrast)
+
+    &__title
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding-bottom: 20px
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 18px
+
+        .ico
+            margin-right: 10px
+            width: 21px
+            height: 19px
+
+    &__container
+        container()
+
+    &__list
+        font-weight: bold
+        font-size: 14px
+
+        @media (min-width: 993px)
+            column-count: 2

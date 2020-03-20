@@ -1,0 +1,39 @@
+.myaccount
+    &__header
+        a
+            display: flex
+            align-items: center
+            height: 50px
+
+        .ico
+            width: 26px
+            height: 26px
+            color: var(--secundary)
+
+        .text
+            color: var(--secundary-hover)
+            font-weight: bold
+            font-size: 12px
+
+    &__content
+        display: none !important
+
+    @media (max-width: 1023px)
+        &__header
+            a
+                justify-content: center
+                min-width: 50px
+
+            .text
+                display: none
+
+    @media (min-width: 1024px)
+        .header &
+            margin-left: 35px
+
+        &__header
+            a
+                justify-content: flex-start
+
+            .ico
+                margin-right: 10px

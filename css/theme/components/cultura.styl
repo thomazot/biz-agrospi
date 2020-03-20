@@ -1,0 +1,33 @@
+.cultura
+    --bg: #eff0f3
+
+    &
+        margin: 50px 0 0
+        padding: 40px 0
+        background: var(--bg)
+
+    &__title
+        margin-right: 60px
+        color: var(--secundary-hover)
+        font-weight: regular
+        font-size: 16px
+        line-height: 1
+
+        strong
+            display: block
+            font-weight: regular
+            font-size: 44px
+
+    &__list
+        .title
+            margin-bottom: 0
+
+    @media (max-width: 992px)
+        box-shadow: 300px 0 0 var(--bg), -300px 0 0 var(--bg)
+
+    @media (min-width: 993px)
+        box-shadow: 800px 0 0 var(--bg), -800px 0 0 var(--bg)
+
+        &__container
+            display: flex
+            align-items: center

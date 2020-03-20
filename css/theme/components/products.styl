@@ -1,0 +1,39 @@
+.products
+    --color-offer: #d3001f
+    --bd: #eff2f8
+
+    &#offer
+        margin-top: -16px
+
+    .login
+        display: none
+
+        .user-logged &
+            display: block
+
+    &__title
+        margin: 0
+        padding: 30px 0
+        color: var(--secundary-hover)
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 16px
+
+        #offer &
+            color: var(--color-offer)
+
+    &__name
+        display: block
+        padding-bottom: 10px
+        color: var(--products-color)
+        font-weight: medium
+        font-size: 14px
+
+    &.carrossel &
+        &__list
+            border: solid 1px var(--bd)
+            border-radius: 4px
+
+    &__case
+        padding: 20px
+        box-shadow: none

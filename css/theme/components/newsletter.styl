@@ -1,0 +1,94 @@
+.newsletter
+    --bg: #7dda25
+    --bd: #75cd21
+    --secundary-contrast: #fff
+
+    .input-text
+        border: 0 !important
+        box-shadow: none !important
+        font-weight: medium
+        font-size: 12px
+
+        &::placeholder
+            color: #bdc1ca
+
+        &:focus::placeholder
+            color: transparent
+
+    &
+        position: relative
+        z-index: 0
+        margin-top: 80px
+        padding: 25px 0
+        background: linear-gradient(to bottom left, var(--bg) 0, var(--bg) 55%, var(--bd) 50%, var(--bd) 100%)
+
+    &__form
+        position: relative
+        z-index: 1
+        margin: 0 auto
+        max-width: 'calc(100% - %s)' % gap
+        width: viewport
+
+    &__text.std
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        color: var(--secundary-contrast)
+        font-weight: medium
+        font-size: 16px
+        line-height: 1.2
+
+        .ico
+            flex: 0 0 36px
+            margin-right: 10px
+            width: 36px
+            height: 36px
+
+    &__email
+        flex: 1 1 20%
+
+    &__email, &__name, &__submit
+        padding-right: 10px
+        padding-left: 10px
+
+    &__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0
+        height: 44px
+        background: var(--secundary-contrast)
+        color: #24aa52
+        font-weight: bold
+        font-size: 14px
+
+    @media (min-width: 993px)
+        &__form
+            flex-wrap: nowrap
+
+        &__text
+            flex: 0 1 390px
+            margin-right: 40px
+            margin-bottom: 0
+
+        &__name, &__email, &__submit
+            padding-bottom: 0
+
+        &__submit
+            flex: 0 0 170px
+
+        &__email
+            flex: 1 1 10%
+            padding-right: 0
+            padding-left: 10px
+
+            .input-text
+                border-radius: 4px 0 0 4px
+
+        &__submit
+            flex: 0 0 95px
+            padding-left: 0
+
+        &__btn
+            border-radius: 0 4px 4px 0
+            box-shadow: none

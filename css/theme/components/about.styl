@@ -1,0 +1,26 @@
+.about
+    margin-top: -16px
+    padding: 90px 0
+    background: url(about) no-repeat
+    bakcground-size: cover
+
+    &__title
+        padding-bottom: 20px
+        font-weight: regular
+        font-size: 26px
+
+    &__container
+        container()
+
+        min-height: 220px
+        color: var(--secundary-contrast)
+        font-weight: regular
+        font-size: 16px
+
+    &__text
+        p + p
+            margin-top: 20px
+
+    @media (min-width: 993px)
+        &__text
+            max-width: 625px

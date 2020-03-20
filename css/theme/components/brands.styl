@@ -1,0 +1,26 @@
+.brands
+    margin: 0 auto
+    padding: 0 0 80px
+    max-width: 'calc(100% - %s)' % gap
+    width: viewport
+
+    .owl-wrapper-outer
+        border: 0
+
+    &:before
+        display: block
+        padding: 40px 0
+        color: var(--secundary-hover)
+        content: 'Grandes Clientes e Empresas com as quais trabalhamos'
+        text-align: center
+        font-weight: bold
+        font-size: 20px
+
+    &__item
+        a
+            border: 0
+
+        img
+            max-width: 100%
+            max-height: 120px
+            object-fit: contain
